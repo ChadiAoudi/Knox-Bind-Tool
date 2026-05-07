@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="KnoxBindTool.vcxproj" Id="177b23eb-cf4a-4a30-b2c8-e93c62e06871" />
+</Solution>

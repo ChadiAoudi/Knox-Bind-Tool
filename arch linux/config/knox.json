@@ -1,0 +1,37 @@
+{
+  "Tools": {
+    "1": {
+      "tool": "nmap",
+      "args": ["-A", "-Pn", "{TARGET}"],
+      "keybinds": ["KEY_LEFTCTRL", "KEY_A", "KEY_B"],
+      "requires_clipboard": true
+    },
+    "2": {
+      "tool": "sqlmap",
+      "args": ["-u", "{TARGET}", "--data", "username=admin&password=admin"],
+      "keybinds": ["KEY_LEFTCTRL", "KEY_A", "KEY_S"],
+      "requires_clipboard": true
+    }
+  },
+  "Keyboard_mode": {
+    "keybinds": ["KEY_LEFTCTRL", "KEY_LEFTCTRL", "KEY_LEFTCTRL"],
+    "keykey": {
+      "move_to_next_monitor": ["KEY_LEFTALT", "KEY_M"],
+      "next_window": ["KEY_LEFTALT", "KEY_TAB"],
+      "move_window_left": ["KEY_LEFTALT", "KEY_H"],
+      "move_window_right": ["KEY_LEFTALT", "KEY_L"],
+      "maximize_window": ["KEY_LEFTALT", "KEY_K"],
+      "minimize_window": ["KEY_LEFTALT", "KEY_J"]
+    }
+  },
+  "Payload_mode": {
+    "1": {
+      "file": "/config/sqli.txt",
+      "keybinds": ["KEY_A", "KEY_B"]
+    },
+    "2": {
+      "file": "/config/xss.txt",
+      "keybinds": ["KEY_C", "KEY_B"]
+    }
+  }
+}
